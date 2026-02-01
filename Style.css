@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec; /* Light pink */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gif { width: 150px; }
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+    height: 60px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute; /* Both need this now */
+    transition: all 0.3s ease-out; /* Makes them slide to the new spot smoothly */
+    z-index: 10;
+}
+
+#yesBtn {
+    background-color: #e91e63;
+    color: white;
+}
+
+#noBtn {
+    background-color: #9e9e9e;
+    color: white;
+    position: absolute;
+}
+
+.hidden { display: none; }
